@@ -75,17 +75,6 @@
   runCount();
   window.addEventListener("scroll", runCount, { passive: true });
 
-  /* ---------- FAQ accordion ---------- */
-  document.querySelectorAll(".faq-q").forEach(function (q) {
-    q.addEventListener("click", function () {
-      var item = q.closest(".faq-item");
-      var a = item.querySelector(".faq-a");
-      var open = item.classList.toggle("open");
-      a.style.maxHeight = open ? a.scrollHeight + "px" : 0;
-      q.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-  });
-
   /* ---------- services split panel ---------- */
   document.querySelectorAll(".svc-split").forEach(function (split) {
     var rows = split.querySelectorAll(".svc-row");
