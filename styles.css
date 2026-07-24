@@ -124,8 +124,7 @@ p{margin:0}
   transition:transform .32s var(--ease-out),opacity .28s var(--ease-out);
 }
 .nav-open .mobile-menu{transform:translateY(0);opacity:1;pointer-events:auto}
-.mobile-menu a:not(.btn){display:block;padding:15px 4px;border-bottom:1px solid var(--line);color:var(--ink);font-size:17px;font-family:"Sora",sans-serif}
-.mobile-menu .btn{margin-top:20px}
+.mobile-menu a{display:block;padding:15px 4px;border-bottom:1px solid var(--line);color:var(--ink);font-size:17px;font-family:"Sora",sans-serif}
 
 /* ============================================================
    HERO
