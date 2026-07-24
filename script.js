@@ -75,26 +75,6 @@
   runCount();
   window.addEventListener("scroll", runCount, { passive: true });
 
-  /* ---------- services split panel ---------- */
-  document.querySelectorAll(".svc-split").forEach(function (split) {
-    var rows = split.querySelectorAll(".svc-row");
-    var panels = split.querySelectorAll(".svc-detail");
-    function activate(i) {
-      rows.forEach(function (r) { r.classList.remove("is-active"); r.setAttribute("aria-selected", "false"); });
-      panels.forEach(function (p) { p.classList.remove("is-active"); });
-      var row = split.querySelector('.svc-row[data-svc="' + i + '"]');
-      var panel = split.querySelector('.svc-detail[data-panel="' + i + '"]');
-      if (row) { row.classList.add("is-active"); row.setAttribute("aria-selected", "true"); }
-      if (panel) panel.classList.add("is-active");
-    }
-    rows.forEach(function (row) {
-      row.addEventListener("click", function () { activate(row.getAttribute("data-svc")); });
-      row.addEventListener("mouseenter", function () {
-        if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) activate(row.getAttribute("data-svc"));
-      });
-    });
-  });
-
   /* ---------- forms: fake success state ---------- */
   document.querySelectorAll("form[data-demo]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
