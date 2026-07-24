@@ -411,7 +411,6 @@ p{margin:0}
 @media (max-width:720px){
   .nav-links,.nav__phone{display:none}
   .hamburger{display:flex}
-  .nav__book{--pad:10px 16px;font-size:13px;white-space:nowrap}
   .statbar__grid{grid-template-columns:repeat(2,1fr)}
   .stat:nth-child(2){border-right:none}
   .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
@@ -421,9 +420,6 @@ p{margin:0}
   .newsletter{padding:38px 26px}
   .form-row{flex-direction:column;gap:0}
   .gallery{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:480px){
-  .nav__book{--pad:9px 14px;font-size:12.5px}
 }
 
 /* ============================================================
